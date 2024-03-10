@@ -40,6 +40,12 @@ cart.addEventListener("click", (e) => {
     return;
   }
   cartArea.style.display = "block";
+
+  if(hamb.style.display === "none"){
+    listaMobile.style.display = "none";
+    hamb.style.display = "block";
+    close.style.display = "none";
+  }
 });
 
 minus.addEventListener("click", (e) => {
@@ -77,6 +83,7 @@ async function fetchData(e) {
     }</span></p>
             </div>
             <img class="close" src="./images/icon-delete.svg" alt="">
+            
             <button class="check">Check out</button>
         `;
 
@@ -122,6 +129,9 @@ hamb.addEventListener("click", () => {
   close.style.display = "block";
   listaMobile.style.display = "block";
   listaMobile.style.top = "0";
+  if (cartArea.style.display === "block") {
+    cartArea.style.display = "none";
+  }
 
   listaMobile.classList.add("animacao-menu");
   setTimeout(() => {
@@ -144,3 +154,4 @@ hamb.addEventListener("click", () => {
   });
 
 });
+

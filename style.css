@@ -1,3 +1,13 @@
+@media ( min-width: 1280px) {
+    #hamb, #close {
+        display: none;
+    }
+
+    .lista-mobile {
+        display: none;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +16,7 @@
 
 }
 
-.lista-mobile {
-    display: none;
-}
+
 
 body {
     
@@ -36,8 +44,13 @@ nav {
 li {
     list-style: none;
     font-size: 20px;
+    cursor: pointer;
 
 
+}
+
+li:hover {
+    color: hsl(219, 9%, 45%);
 }
 
 .lista2 {
@@ -144,17 +157,11 @@ p {
     color: hsl(219, 9%, 45%);
 }
 
-.lista-mobile {
-    display: none;
-}
-
 .logo-mobile{
     display: none;
 }
 
-#hamb, #close {
-    display: none;
-}
+
 
 .area-produto {
     margin-top: 20%;
@@ -447,7 +454,7 @@ button:hover {
         justify-content: start;
         align-items: start;
         gap: 10px;
-        height: 2000px;
+        height: 100vh;
         width: 60%;
         padding: 20px;
         
@@ -566,6 +573,30 @@ button:hover {
         color: hsl(26, 100%, 55%);
     }
 
+    .cart-area {
+        max-width: 370px;
+        
+        min-width: 300px;
+        right: 10%;
+        top: 130%;
+    }
+
+
+    .nameProduct{
+        font-size: 15px;
+    }
+
+    .check{
+        align-self: center;
+        justify-self: center;
+        width: 40%;
+        font-size: 15px;
+        height: 40px;
+    }
+
+    .preco-normal, .countFinal{
+        font-size: 16px;
+    }
 }
 
 /* animacao leftmenu */
