@@ -1,5 +1,3 @@
-
-
 const minus = document.querySelector(".minus");
 const plus = document.querySelector(".plus");
 const cart = document.querySelector(".cart");
@@ -16,7 +14,6 @@ addToCart.addEventListener("click", (e) => {
   const newPrice = document.querySelector(".new-price");
   const countFinal = document.querySelector(".countFinal");
   const precoNormal = document.querySelector(".preco-normal");
-
 
   fetch("http://localhost:3000/cart", {
     method: "POST",
@@ -41,7 +38,7 @@ cart.addEventListener("click", (e) => {
   }
   cartArea.style.display = "block";
 
-  if(hamb.style.display === "none"){
+  if (hamb.style.display === "none") {
     listaMobile.style.display = "none";
     hamb.style.display = "block";
     close.style.display = "none";
@@ -61,8 +58,6 @@ plus.addEventListener("click", (e) => {
   const count = document.querySelector(".count");
   count.textContent = parseInt(count.textContent) + 1;
 });
-
-
 
 async function fetchData(e) {
   const carrinhoEstoque = document.querySelector(".grid-cart");
@@ -95,7 +90,7 @@ async function fetchData(e) {
       if (item.quantity === 0) {
         empty.style.display = "block";
       }
-      
+
       const close = document.querySelector(".close");
       close.addEventListener("click", () => {
         fetch(`http://localhost:3000/cart/${item.id}`, {
@@ -118,13 +113,12 @@ function carrinho() {
 
 carrinho();
 
-
 const hamb = document.getElementById("hamb");
 const close = document.getElementById("close");
 const listaMobile = document.querySelector(".lista-mobile");
 
 hamb.addEventListener("click", () => {
-  listaMobile.classList.remove("active2")
+  listaMobile.classList.remove("active2");
   hamb.style.display = "none";
   close.style.display = "block";
   listaMobile.style.display = "block";
@@ -137,21 +131,47 @@ hamb.addEventListener("click", () => {
   setTimeout(() => {
     listaMobile.classList.remove("animacao-menu");
   }, 500);
-  listaMobile.classList.add("active1")
+  listaMobile.classList.add("active1");
 
   close.addEventListener("click", () => {
-    listaMobile.classList.remove("active1")
+    listaMobile.classList.remove("active1");
     listaMobile.classList.add("animacao-menu-reverse");
     setTimeout(() => {
       listaMobile.classList.remove("animacao-menu-reverse");
     }, 500);
 
-    listaMobile.classList.add("active2")
-    
+    listaMobile.classList.add("active2");
+
     listaMobile.style.display = "block";
     hamb.style.display = "block";
     close.style.display = "none";
   });
-
 });
 
+//troca de imagens no modal por checkbox
+const imagens = document.querySelectorAll(".imagens");
+
+imagens.forEach((imagem) => {
+  imagem.addEventListener("click", (e) => {
+    const image = document.querySelector(".modal-img");
+  });
+});
+
+const closeModal = document.querySelector(".close-modal");
+
+closeModal.addEventListener("click", () => {
+  const modal = document.querySelector(".hidden");
+  modal.style.display = "none";
+});
+
+const areaProduto = document.querySelector(".produto1");
+
+areaProduto.addEventListener("click", () => {
+  const modal = document.querySelector(".hidden");
+  modal.style.display = "block";
+});
+
+el.scrollIntoView({
+  behavior: "smooth",
+  inline: "start",
+});
