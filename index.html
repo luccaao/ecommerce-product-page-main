@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+
+      <ul class="lista1">
+        <li><img src="./images/logo.svg" alt=""></li>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="menu-hamb">
+        <li><img id="hamb" src="./images/icon-menu.svg" alt=""></li>
+        <li><img id="close" src="./images/icon-close.svg" alt=""></li>
+      </div>
+      <li class="logo-mobile"><img src="./images/logo.svg" alt=""></li>
+
+      <ul class="lista-mobile">
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+
+      <ul class="lista2">
+        <span class="carrinhoVazio"></span>
+        <li><img class="cart" src="./images/icon-cart.svg" alt=""></li>
+        <div class="cart-area">
+          <h2>Cart</h2>
+          <hr>
+          <div class="grid-cart">
+            <p class="empty">your cart is empty</p>
+          </div>
+        </div>
+        <li><img class="user" src="./images/image-avatar.png" alt=""></li>
+      </ul>
+
+
+    </nav>
+  </header>
+
+  <section class="containerzao">
+
+    <div class="area-produto">
+      <img class="produto1" src="./images/image-product-1.jpg" alt="">
+
+      
+        <img class="produtot5" src="./images/image-product-1-thumbnail.jpg" alt="">
+        <img class="produtot2" src="./images/image-product-2-thumbnail.jpg" alt="">
+        <img class="produtot3" src="./images/image-product-3-thumbnail.jpg" alt="">
+        <img class="produtot4" src="./images/image-product-4-thumbnail.jpg" alt="">
+      
+      
+    </div>
+
+    <div class="centera">
+      <div class="area-info">
+        <span class="sneaker">Sneaker Company</span>
+        <h1 class="info-h1">Fall Limited Edition <br class="break"> Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear  companion. Featuring a
+          durable rubber outer sole, they’ll  withstand everything the weather can offer.
+        </p>
+
+        <div class="mobile-preco">
+          <div class="preco">
+              <p style="font-size: 30px; font-weight:bold; color:black;"> $<span class="new-price">125.00</span></p>
+            <p class="discount">50%</p>
+          </div>
+          <p class="old-price">$250.00</p>
+        </div>
+
+        <div class="quantidade">
+          <div class="qtd">
+            <img class="minus" src="./images/icon-minus.svg" alt="">
+            <span class="count">0</span>
+            <img class="plus" src="./images/icon-plus.svg" alt="">
+          </div>
+      
+      
+        <div class="botao-cart">
+          <button class="add-to-cart"> Add to cart</button>
+      
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </section>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

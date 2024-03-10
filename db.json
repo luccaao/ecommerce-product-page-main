@@ -1,0 +1,16 @@
+{
+  "cart": [
+    {
+      "name": "Fall Limited Edition Sneakers",
+      "preco": "125.00",
+      "quantity": "3",
+      "id": 1
+    },
+    {
+      "name": "Fall Limited Edition Sneakers",
+      "preco": "125.00",
+      "quantity": "2",
+      "id": 2
+    }
+  ]
+}
